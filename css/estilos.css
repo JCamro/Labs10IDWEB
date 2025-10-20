@@ -22,7 +22,7 @@ main {
 nav {
     display: flex;
     justify-content: center;
-    
+    align-items: center;
     margin: 0%;
     padding: 0%;
 
@@ -31,13 +31,28 @@ nav {
     gap: 20px;
 }
 
-nav p, a {
+nav p {
     margin: 0%;
-    padding: 1%;
+    padding: 1.5%;
     flex: 1;
     font-weight: bold;
-    text-decoration: none;
+    
     color: #c5b89f;
+}
+
+nav img {
+    
+    height: 40px;
+    
+    margin-left: 20px;
+    padding: 0%;
+    
+}
+
+nav a {
+    color: #c5b89f;
+    text-decoration: none;
+
 }
 
 nav p:hover {
@@ -79,7 +94,7 @@ footer {
     align-items: center;
 
     padding: 10%;
-    background-color: lightgreen;
+    background-color: #9e2d4a;
 }
 
 form {
@@ -87,13 +102,21 @@ form {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    
     gap: 10px;
     text-align: left;
 
     max-width: 50%;
     width: 50%;
+
+    background-color: #c5b89f;
+    padding: 5%;
+    border-radius: 20px;
 }
 
+form h2 {
+    text-align: center;
+}
 
 form button, input, textarea  {
     padding: 15px;
