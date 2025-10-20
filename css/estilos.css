@@ -1,0 +1,77 @@
+
+body, html{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    max-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+
+    margin: 0%;
+    padding: 1%;
+
+    background-color: blueviolet;
+    
+    gap: 20px;
+}
+
+nav a {
+    flex: 1;
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    margin: 0%;
+    padding: 5%;
+    background-color: aquamarine;
+}
+
+.caja-contenido {
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    padding: 8%;
+    background-color: lightpink;
+    
+}
+
+footer {
+    margin: 0%;
+    padding: 2%;
+    background-color: blueviolet;
+}
+
+.caja-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10%;
+    background-color: lightgreen;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    text-align: left;
+
+    max-width: 50%;
+    width: 50%;
+}
+
+
+form button, input, textarea {
+    padding: 7px;
+    
+    border: 0px;
+    border-radius: 10px;
+}
