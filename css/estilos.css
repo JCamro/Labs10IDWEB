@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    flex: 1; /* hace que el contenido principal crezca para llenar el espacio */
+    flex: 1;
     background: none;
 }
 
@@ -23,9 +23,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #450b1e;
-    
-    padding-inline: 20px;
+
+    background: linear-gradient(180deg, #0a0a0a 0%, #000000 100%);
+
+    padding-inline: 130px;
 }
 
 .svg-img a{
@@ -34,7 +35,8 @@ nav {
 }
 
 .svg-img img {
-    width: 200px;
+    max-width: 100%;
+    width: 120px;
     
     filter: invert(100%);
 
@@ -42,65 +44,61 @@ nav {
     padding: 0%;
 }
 
-/* Quitar los puntos del listado */
+
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px; /* separación entre elementos */
+    
+    gap: 20px; 
     margin: 0;
     padding: 0;
 }
 
-/* Cada item */
+
 nav li {
-    
     transition: background-color 0.3s ease;
 }
 
-/* Enlaces dentro del nav */
 nav a {
     display: block;
     
-    color: #feffd4;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 
-    padding: 20px;
+    padding: 30px;
     margin: 0%;
 }
 
 /* Efecto hover */
 nav li:hover {
-    background-color: #e0d4ba;
+    background-color: #3d0000;
         
 }
-
-
-
 
 
 header{
     margin: 0%;
     padding: 5%;
 
-    background-color: #9e2d4a;
+    background-image: url(/imagenes/hero\ img.jpg);
+    background-repeat: no-repeat;
+    background-size:100% ;
 
-    color: #feffd4;
+    color: #fafafa;
+    font-weight: bold;
+    font-size: 30px;
 }
-
-
 
 footer {
     margin: 0%;
     padding: 2%;
 
-    background-color: #450b1e;
+    background: #000000;
+    border-top: 1px solid #3d0000;
 
-    color: #feffd4;
+    color: #fafafa;
 }
-
-
-
 
 
 
@@ -111,7 +109,9 @@ footer {
     align-items: center;
 
     padding: 10%;
-    background-color: #9e2d4a;
+    background-image: url(/imagenes/bg\ contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 form {
@@ -126,9 +126,12 @@ form {
     max-width: 50%;
     width: 50%;
 
-    background-color: #c5b89f;
+    background-color: #ccc9c3ae;
     padding: 5%;
     border-radius: 20px;
+
+    font-weight: bold;
+    font-size: x-large ;
 }
 
 form h2 {
@@ -145,8 +148,6 @@ form button, input, textarea  {
 }   
 
 
-
-
 .caja-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));    
@@ -157,32 +158,62 @@ form button, input, textarea  {
     
     gap: 50px;
     
-    background-color: #c5b89f;
+    background-image: url(/imagenes/bg\ contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 
 .item-grid {
     
-    background-color: #feffd4;
-    border-radius: 20px;
-    border: 0px;
+    background: rgba(255, 255, 255, 0.328);
+    border-radius: 10px;
 
-    box-shadow: 5px 5px 20px 5px ;
+    color: white;
 
     width: 100%;
     max-width: 500px;
 
     max-height: 100%;
     height: 500px;
+
 }
+
+
 
 
 .contenido {
     grid-template-columns: repeat(1, 1fr);
 }
 
+.proyectos {
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.proyecto {
+    max-width: 1000px;
+    transition: transform 0.8s ease;
+}
+.proyecto:hover {
+    transform: scale(1.02);
+}
+
+
 .inicio {
     padding: 10px;
     max-width: 50%;
+
+    transition: transform 0.6s ease;
+}
+
+.inicio:hover {
+    transform: scale(1.05);
+}
+
+.inicio img {
+    width: 100%;
+    max-width: 550px;
 }
 
 .nosotros  {
@@ -195,7 +226,8 @@ form button, input, textarea  {
 #titulo-nosotros {
     padding: 2%;
     margin: 0%;
-    background-color: #feffd4;
+    color: #fafafa;
+    background: linear-gradient(#000000 30%);
 }
 
 
