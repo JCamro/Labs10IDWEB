@@ -21,46 +21,63 @@ main {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0%;
-    padding: 0%;
-
     background-color: #450b1e;
     
-    gap: 20px;
+    padding-inline: 20px;
 }
 
-nav p {
-    margin: 0%;
-    padding: 1.5%;
-    flex: 1;
-    font-weight: bold;
-    
-    color: #c5b89f;
-}
-
-nav img {
-    
-    height: 40px;
-    
-    margin-left: 20px;
+.svg-img a{
     padding: 0%;
-    
+    margin: 0%;
 }
 
+.svg-img img {
+    width: 200px;
+    
+    filter: invert(100%);
+
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Quitar los puntos del listado */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* separación entre elementos */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cada item */
+nav li {
+    
+    transition: background-color 0.3s ease;
+}
+
+/* Enlaces dentro del nav */
 nav a {
-    color: #c5b89f;
-    text-decoration: none;
-
-}
-
-nav p:hover {
-    background-color: rgb(255, 255, 255);
-    color: white;
+    display: block;
     
-    transition: 0.2s;
+    color: #feffd4;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 20px;
+    margin: 0%;
 }
+
+/* Efecto hover */
+nav li:hover {
+    background-color: #e0d4ba;
+        
+}
+
+
+
+
 
 header{
     margin: 0%;
@@ -149,6 +166,8 @@ form button, input, textarea  {
     border-radius: 20px;
     border: 0px;
 
+    box-shadow: 5px 5px 20px 5px ;
+
     width: 100%;
     max-width: 500px;
 
@@ -156,12 +175,14 @@ form button, input, textarea  {
     height: 500px;
 }
 
+
 .contenido {
     grid-template-columns: repeat(1, 1fr);
 }
 
 .inicio {
-    max-width: 100%;
+    padding: 10px;
+    max-width: 50%;
 }
 
 .nosotros  {
